@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2024.2.26)  12 MAR 2024 10:15
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2024.2.26)  18 MAR 2024 17:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -856,6 +856,130 @@ misspelled its name. Try typing  <return>  to proceed.
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count334
 )
+(D:\Users\trigo\AppData\Local\Programs\MiKTeX\tex/latex/tabularray\tabularray.s
+ty (D:\Users\trigo\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2024-01-04 L3 programming layer (loader) 
+
+(D:\Users\trigo\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-xet
+ex.def
+File: l3backend-xetex.def 2024-01-04 L3 backend support: XeTeX
+\g__graphics_track_int=\count335
+\l__pdf_internal_box=\box77
+\g__pdf_backend_object_int=\count336
+\g__pdf_backend_annotation_int=\count337
+\g__pdf_backend_link_int=\count338
+))
+Package: tabularray 2024-02-16 v2024A Typeset tabulars and arrays with LaTeX3
+\l__tblr_a_int=\count339
+\l__tblr_c_int=\count340
+\l__tblr_r_int=\count341
+\l__tblr_d_dim=\dimen294
+\l__tblr_h_dim=\dimen295
+\l__tblr_o_dim=\dimen296
+\l__tblr_p_dim=\dimen297
+\l__tblr_q_dim=\dimen298
+\l__tblr_r_dim=\dimen299
+\l__tblr_s_dim=\dimen300
+\l__tblr_t_dim=\dimen301
+\l__tblr_v_dim=\dimen302
+\l__tblr_w_dim=\dimen303
+\l__tblr_a_box=\box78
+\l__tblr_b_box=\box79
+\l__tblr_c_box=\box80
+\l__tblr_d_box=\box81
+\g__tblr_table_count_int=\count342
+\c@rownum=\count343
+\c@colnum=\count344
+\c@rowcount=\count345
+\c@colcount=\count346
+\abovesep=\dimen304
+\belowsep=\dimen305
+\leftsep=\dimen306
+\rightsep=\dimen307
+\g_tblr_level_int=\count347
+\g__tblr_data_row_key_count_int=\count348
+\g__tblr_data_column_key_count_int=\count349
+\g__tblr_data_cell_key_count_int=\count350
+\g__tblr_array_int=\count351
+\l__tblr_key_count_int=\count352
+\l__tblr_key_quotient_int=\count353
+\l__tblr_key_quotient_two_int=\count354
+\l__tblr_key_remainder_int=\count355
+\g__tblr_data_str_value_count_int=\count356
+\rulewidth=\dimen308
+\l__tblr_strut_dp_dim=\dimen309
+\l__tblr_strut_ht_dim=\dimen310
+\g__tblr_cell_wd_dim=\dimen311
+\g__tblr_cell_ht_dim=\dimen312
+\g__tblr_cell_head_dim=\dimen313
+\g__tblr_cell_foot_dim=\dimen314
+\l__column_target_dim=\dimen315
+\l__tblr_caption_box=\box82
+\l__tblr_caption_left_box=\box83
+\l__tblr_row_head_box=\box84
+\l__tblr_row_foot_box=\box85
+\l__tblr_row_head_foot_dim=\dimen316
+\tablewidth=\dimen317
+\l__tblr_table_firsthead_box=\box86
+\l__tblr_table_middlehead_box=\box87
+\l__tblr_table_lasthead_box=\box88
+\l__tblr_table_firstfoot_box=\box89
+\l__tblr_table_middlefoot_box=\box90
+\l__tblr_table_lastfoot_box=\box91
+\l__tblr_remain_height_dim=\dimen318
+\l__tblr_long_from_int=\count357
+\l__tblr_long_to_int=\count358
+\l__tblr_curr_i_int=\count359
+\l__tblr_prev_i_int=\count360
+\l__tblr_table_page_int=\count361
+\l__tblr_table_head_box=\box92
+\l__tblr_table_foot_box=\box93
+\l__tblr_table_head_foot_dim=\dimen319
+\l__tblr_table_head_body_foot_dim=\dimen320
+\l__tblr_table_box=\box94
+\l__tblr_table_hlines_box=\box95
+\l__tblr_hline_box=\box96
+\l__tblr_row_box=\box97
+\l__tblr_col_o_wd_dim=\dimen321
+\l__tblr_col_b_wd_dim=\dimen322
+\l__tblr_hline_leftskip_dim=\dimen323
+\l__tblr_hline_rightskip_dim=\dimen324
+\l__tblr_row_ht_dim=\dimen325
+\l__tblr_row_dp_dim=\dimen326
+\l__tblr_row_abovesep_dim=\dimen327
+\l__tblr_row_belowsep_dim=\dimen328
+\l__tblr_row_vlines_box=\box98
+\l__tblr_vline_box=\box99
+\l__tblr_cell_box=\box100
+\l__row_upper_dim=\dimen329
+\l__row_lower_dim=\dimen330
+\l__row_vpace_dim=\dimen331
+\l__tblr_vline_aboveskip_dim=\dimen332
+\l__tblr_vline_belowskip_dim=\dimen333
+\l__tblr_cell_wd_dim=\dimen334
+\l__tblr_cell_ht_dim=\dimen335
+\l__tblr_diag_box=\box101
+)
+(D:\Users\trigo\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen336
+\lightrulewidth=\dimen337
+\cmidrulewidth=\dimen338
+\belowrulesep=\dimen339
+\belowbottomsep=\dimen340
+\aboverulesep=\dimen341
+\abovetopsep=\dimen342
+\cmidrulesep=\dimen343
+\cmidrulekern=\dimen344
+\defaultaddspace=\dimen345
+\@cmidla=\count362
+\@cmidlb=\count363
+\@aboverulesep=\dimen346
+\@belowrulesep=\dimen347
+\@thisruleclass=\count364
+\@lastruleclass=\count365
+\@thisrulewidth=\dimen348
+)
 (D:\Users\trigo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerthemeCambr
 idgeUS.sty
 (D:\Users\trigo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerinnertheme
@@ -868,46 +992,58 @@ beaver.sty))
 dolphin.sty)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 28.
+(hyperref)                removing `\new@ifnextchar' on input line 32.
+
+(main.aux
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
 
 
-(D:\Users\trigo\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-xet
-ex.def
-File: l3backend-xetex.def 2024-01-04 L3 backend support: XeTeX
-\g__graphics_track_int=\count335
-\l__pdf_internal_box=\box77
-\g__pdf_backend_object_int=\count336
-\g__pdf_backend_annotation_int=\count337
-\g__pdf_backend_link_int=\count338
-) (main.aux)
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
-8.
-
-(D:\Users\trigo\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 3
+2.
+ (D:\Users\trigo\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -943,57 +1079,57 @@ LaTeX Font Info:    ... okay on input line 28.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 28.
+Package hyperref Info: Link coloring OFF on input line 32.
 (main.out) (main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 28.
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 32.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 28.
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 32.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 28.
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/lmss/b/n on input line 28.
+(Font)                  OT1/cmss/b/n --> OT1/lmss/b/n on input line 32.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmr/m/n on input line 28.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 28.
+(Font)                  OT1/lmss/m/n --> TU/lmr/m/n on input line 32.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> TU/lmss/b/n on input line 28.
+(Font)                  OT1/lmr/bx/n --> TU/lmss/b/n on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmr/bx/n --> TU/lmss/b/n on input line 28.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 28.
+(Font)                  OT1/lmr/bx/n --> TU/lmss/b/n on input line 32.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 28.
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/lmss/m/n on input line 28.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 28.
+(Font)                  OT1/lmss/bx/n --> TU/lmss/m/n on input line 32.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> TU/lmss/m/it on input line 28.
+(Font)                  OT1/lmr/m/it --> TU/lmss/m/it on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> TU/lmss/m/it on input line 28.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 28.
+(Font)                  OT1/lmr/bx/it --> TU/lmss/m/it on input line 32.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 28.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 28.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 32.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  TU/lmss/m/n --> TU/lmss/b/n on input line 28.
+(Font)                  TU/lmss/m/n --> TU/lmss/b/n on input line 32.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  TU/lmss/m/it --> TU/lmss/b/it on input line 28.
+(Font)                  TU/lmss/m/it --> TU/lmss/b/it on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/lmss/b/n --> TU/lmr/b/n on input line 28.
+(Font)                  OT1/lmss/b/n --> TU/lmr/b/n on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  TU/lmss/b/n --> TU/lmss/b/n on input line 28.
+(Font)                  TU/lmss/b/n --> TU/lmss/b/n on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  TU/lmss/m/n --> TU/lmss/b/n on input line 28.
+(Font)                  TU/lmss/m/n --> TU/lmss/b/n on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  TU/lmss/m/it --> TU/lmss/b/it on input line 28.
+(Font)                  TU/lmss/m/it --> TU/lmss/b/it on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  TU/lmtt/m/n --> TU/lmtt/b/n on input line 28.
+(Font)                  TU/lmtt/m/n --> TU/lmtt/b/n on input line 32.
 
 (D:\Users\trigo\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-b
 asic-dictionary-English.dict
@@ -1018,15 +1154,366 @@ Dictionary: translator-numbers-dictionary, Language: English
 (D:\Users\trigo\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-t
 heorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-) (main.nav) [1
+)
+(D:\Users\trigo\AppData\Local\Programs\MiKTeX\tex/latex/ninecolors\ninecolors.s
+ty
+Package: ninecolors 2022-02-13 v2022D Select colors with proper color contrast
+
+
+Package xcolor Warning: Package option `hyperref' is obsolete and ignored on in
+put line 18.
+
+
+(D:\Users\trigo\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e.sty
+Package: xparse 2023-10-10 L3 Experimental document command parser
+)) (main.nav) [1
 
 ] (main.toc) [2
 
 ] [3
 
+] [4
+
+] [5
+
+] [6
+
+] [7
+
 ]
-No file main.bbl.
-[4
+LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
+151.
+
+(D:\Users\trigo\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmss.fd
+File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+51.
+
+(D:\Users\trigo\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+151.
+
+(D:\Users\trigo\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+151.
+
+(D:\Users\trigo\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 151.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 151.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 151.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 151
+.
+
+(D:\Users\trigo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 151
+.
+
+(D:\Users\trigo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 151.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <8> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 151.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 151.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.151 ^^I\end{frame}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.151 ^^I\end{frame}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \tex_par:D 
+l.151 ^^I\end{frame}
+                    
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.151 ^^I\end{frame}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.151 ^^I\end{frame}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.151 ^^I\end{frame}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.151 ^^I\end{frame}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `\eqno' in math mode.
+\veqno ->\@kernel@eqno 
+                       \aftergroup \ignorespaces 
+l.151 ^^I\end{frame}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.151 ^^I\end{frame}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.151 ^^I\end{frame}
+                    
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.151 ^^I\end{frame}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.151 ^^I\end{frame}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \tex_par:D 
+l.151 ^^I\end{frame}
+                    
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.151 ^^I\end{frame}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.151 ^^I\end{frame}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.151 ^^I\end{frame}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.151 ^^I\end{frame}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `\eqno' in math mode.
+\veqno ->\@kernel@eqno 
+                       \aftergroup \ignorespaces 
+l.151 ^^I\end{frame}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.151 ^^I\end{frame}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[8
+
+] [9
+
+]
+File: figures-paper/table2.png Graphic file (type bmp)
+<figures-paper/table2.png>
+ [10
+
+]
+
+! LaTeX Error: File `' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.194 ^^I\end{frame}
+                    
+I could not locate the file with any of these extensions:
+.pdf,.PDF,.ai,.AI,.png,.PNG,.jpg,.JPG,.jpeg,.JPEG,.jp2,.JP2,.jpf,.JPF,.bmp,.BMP
+,.ps,.PS,.eps,.EPS,.mps,.MPS
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[11
+
+] [12
+
+]
+File: figures-paper/table3.png Graphic file (type bmp)
+<figures-paper/table3.png>
+ [13
+
+]
+
+! LaTeX Error: File `' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.234 ^^I\end{frame}
+                    
+I could not locate the file with any of these extensions:
+.pdf,.PDF,.ai,.AI,.png,.PNG,.jpg,.JPG,.jpeg,.JPEG,.jp2,.JP2,.jpf,.JPF,.bmp,.BMP
+,.ps,.PS,.eps,.EPS,.mps,.MPS
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[14
+
+]
+File: figures-paper/table4.png Graphic file (type bmp)
+<figures-paper/table4.png>
+
+Overfull \vbox (11.92429pt too high) detected at line 246
+ []
+
+[15
+
+]
+
+! LaTeX Error: File `' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.259 ^^I\end{frame}
+                    
+I could not locate the file with any of these extensions:
+.pdf,.PDF,.ai,.AI,.png,.PNG,.jpg,.JPG,.jpeg,.JPEG,.jp2,.JP2,.jpf,.JPF,.bmp,.BMP
+,.ps,.PS,.eps,.EPS,.mps,.MPS
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[16
+
+]
+File: figures-paper/table5.png Graphic file (type bmp)
+<figures-paper/table5.png>
+ [17
+
+]
+
+! LaTeX Error: File `' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.282 ^^I\end{frame}
+                    
+I could not locate the file with any of these extensions:
+.pdf,.PDF,.ai,.AI,.png,.PNG,.jpg,.JPG,.jpeg,.JPEG,.jp2,.JP2,.jpf,.JPF,.bmp,.BMP
+,.ps,.PS,.eps,.EPS,.mps,.MPS
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[18
 
 ]
 \tf@nav=\write6
@@ -1043,16 +1530,20 @@ No file main.bbl.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 47949AC7C3DCEDDDEEFE3CD50587DDA1;103.
+(rerunfilecheck)             Checksum: FC6BB1A6EFF883146FD64D86860E3C06;370.
  ) 
 Here is how much of TeX's memory you used:
- 21648 strings out of 409617
- 412662 string characters out of 5774013
- 1930191 words of memory out of 5000000
- 43327 multiletter control sequences out of 15000+600000
- 558485 words of font info for 44 fonts, out of 8000000 for 9000
+ 24463 strings out of 409617
+ 481540 string characters out of 5774013
+ 1934191 words of memory out of 5000000
+ 46083 multiletter control sequences out of 15000+600000
+ 570121 words of font info for 65 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,16n,123p,439b,602s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,16n,123p,439b,697s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (4 pages).
+Output written on main.pdf (18 pages).
