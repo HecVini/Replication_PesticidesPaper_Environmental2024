@@ -1,0 +1,42 @@
+---
+title: "The Hidden Cost of Bananas: The Effects of Pesticides on Newborns’ Health "
+subtitle: " Replication Report | Environmental and Urban Economics | Prof.: Sophie Mattes "
+author: " Vinícius Hector and Natália Trigo [FGV EPGE] "
+date: "March, 2024"
+header-includes:
+   - \usepackage{amsmath}
+   - \usepackage{unicode-math}
+output:
+ html_document:
+   includes:
+   theme: yeti #default, cerulean, journal, flatly, darkly, readable, spacelab, united, cosmo, lumen, paper, sandstone, simplex, and yeti.
+   highlight: tango # default, tango, pygments, kate, monochrome, espresso, zenburn, haddock, breezedark, and textmate
+   toc: true # table of contents (TOC) / índice lateral
+   toc_depth: 4 # the depth of headers
+   toc_float: 
+      collapsed: false # se false:fixo, se true: vc aperta e abre
+      smooth_scroll: true # whether page scrolls are animated when TOC items are navigated to via mouse clicks
+      number_sections: true
+      css: css/style.css
+      extra_dependencies: ["asmath","unicode-math"]
+---
+
+# Question 1
+
+```{r, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(readr)
+library(here)
+library(ggplot2)
+options(scipen = 999)
+ # Markdown uses the directory with the .Rmd file as the working directory, which is not necessarily your ordinary working directory.
+
+```
+
+## 1.a
+
+
+
+
+
+### sth
