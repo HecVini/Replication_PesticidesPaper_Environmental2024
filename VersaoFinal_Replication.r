@@ -78,7 +78,6 @@ bananas2 <- bananas2 %>%
 
 no_bootstraps = 100
 
-
 ## 3. Set up functions
 
 ### 3.1. Given a dataset with cluster specified, this returns a list with a sample of replacement the size of the unique number of clusters
