@@ -19,10 +19,7 @@ library(lmtest) # For coefficient testing with robust standard errors
 library(plm) # Panel Data Models - to perform OLS with FE
 library(tidyr)
 library(tidycat)
-library(bife)
 library(fixest)
-library(multiwayvcov)
-library(progress)
 
 # linter:disable
 lint(
@@ -270,10 +267,12 @@ get_results <- function(data, dependent_var, independent_var, fixed_effects, rem
     ) # find 95% conf. interval
 
     if (model_type == "logit") {
-        results <- results %>% mutate(significant = ifelse(ci_low > 1 & ci_high > 1, "yes", "no")) # Signicance in logit is around 1, not zero
-    } else if (model_type == "ols") {
-        results <- results %>% mutate(significant = ifelse(ci_low > 0 & ci_high > 0, "yes", "no")) # If the 95CI is all negative or all positive, the coef is significant to explain the dependent varaible
+    results <- results %>% mutate(significant = ifelse((ci_low < 1 & ci_high < 1) | (ci_low > 1 & ci_high > 1), "yes", "no"))
+    } 
+    else if (model_type == "ols") {
+    results <- results %>% mutate(significant = ifelse((ci_low < 0 & ci_high < 0) | (ci_low > 0 & ci_high > 0), "yes", "no"))
     }
+
 
     results <- results %>% mutate(ci = paste0("[", round(ci_low, 2), ", ", round(ci_high, 2), "]")) # Show the CI
     results <- results %>% select(coef, estimate, mean, robust_se, ci, significant) # Final results for some regression
@@ -288,7 +287,7 @@ get_results <- function(data, dependent_var, independent_var, fixed_effects, rem
     return(results)
 }
 
-#example6 <- get_results(
+example6 <- get_results(
     data = bananas1,
     dependent_var = "weight",
     independent_var = c('bx','ethnic'),
