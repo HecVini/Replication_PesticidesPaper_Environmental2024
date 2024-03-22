@@ -351,8 +351,8 @@ table5_3 = run_bootstrap(
     model_number = 3
 )
 
-table5_4 = run_bootstrap(
-    data = bananas2 %>% filter(stay_mom > 0),
+#table5_4 = run_bootstrap(
+    data = bananas2,
     model_type = "ols",
     dependent_var = "gweeks",
     independent_var = c("bx * pxp",birth_interval),
@@ -395,8 +395,8 @@ table5_7 = run_bootstrap(
     model_number = 7
 )
 
-table5_8 = run_bootstrap(
-    data = bananas2 %>% filter(stay_mom > 0),
+#table5_8 = run_bootstrap(
+    data = bananas2,
     model_type = "ols",
     dependent_var = "preterm",
     independent_var = c("bx * pxp",birth_interval),
