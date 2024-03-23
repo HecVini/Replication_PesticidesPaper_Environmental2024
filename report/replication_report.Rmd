@@ -127,21 +127,35 @@ On the other hand, the dataset containing information about  **Ecuador's banana 
 
 ### Table 3
 
+![](table3.png)
+<br>
 
 #### Table 3 <span style="color:blue">replicated</span>
 
 
 ### Table 4
 
+![](table4.png)
+
 <br>
 
 #### Table 4 <span style="color:blue">replicated</span>
 
+
 ### Table 5
+
+![](table5.png)
+
+<br>
 
 #### Table 5 <span style="color:blue">replicated</span>
 
 ### Table 6
+
+![](table6.png)
+
+
+<br>
 
 #### Tablr 6 <span style="color:blue">replicated</span>
 
