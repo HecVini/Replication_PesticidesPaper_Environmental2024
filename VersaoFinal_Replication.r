@@ -72,8 +72,7 @@ bananas2$mfeid <- as.factor(bananas2$mfeid)
 bananas2 <- bananas2 %>%
     mutate(mfeid_grid = interaction(mfeid, grid)) %>%
     drop_na(mfeid_grid) # Create a new variable that is the interaction between the maternal fixed effect and the grid to be used on table 5
-
-no_bootstraps = 100
+no_bootstraps = 20
 
 ## 3. Set up functions
 
@@ -217,7 +216,12 @@ example5_2 <- run_bootstrap(
     n_bootstraps = 2 # Just to test, in the paper the authors used 1000 - Notice this is VERY computationally expensive
 )
 example5_2
+bananas2_variables_description %>% print(n = 100)
 
+bananas2 %>% subset(select = c(mfeid, grid)) %>% head() 
+
+
+# Notice that the mfeid_grid variable is the interaction between the maternal fixed effect and the grid
 ### 3.6. Given the dataframe with the estimates of the coefficients for each bootstrap, this returns a dataframe with the mean and standard deviation of the coefficients
 get_results <- function(data, dependent_var, independent_var, fixed_effects, remove_var, cluster_var, model_type, n_bootstraps, regression_number) {
     boot_estimates <- run_bootstrap(data, dependent_var, independent_var, fixed_effects, remove_var, cluster_var, model_type, n_bootstraps) # Get the dataframe with multiple coefs estimates
@@ -471,7 +475,7 @@ table5_reg1 = get_results(
     independent_var = c('bx',birth_interval),
     fixed_effects = c('cohort',"mfeid*grid"),
     remove_var = NA,
-    cluster_var = "mfeid_grid",
+    cluster_var = "mfeid",
     model_type = "ols",
     n_bootstraps = no_bootstraps,
     regression_number = 1)
