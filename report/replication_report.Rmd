@@ -648,7 +648,7 @@ write.csv(x = table5_reg8, file = 'regressions_results/table5_reg8.csv')
 
 <br>
 
-#### Tablr 6 <span style="color:blue">replicated</span>
+#### Table 6 <span style="color:blue">replicated</span>
 
 ```{r, message=FALSE, warning=FALSE, eval=FALSE}
 table6_reg1 = get_results(
