@@ -3,7 +3,7 @@ library(tidyverse) # Easily Installand Load the 'Tidyverse'
 library(lubridate) # Make Dealing with Dates a Little Easier
 library(janitor) # Simple Tools for Examining and Cleaning Dirty Data
 library(data.table) # Extension of `data.frame`
-#library(tidylog) # Logging for 'dplyr' and 'tidyr' Functions
+library(tidylog) # Logging for 'dplyr' and 'tidyr' Functions
 library(haven) # Open .xpt and Stata (.do) files
 library(foreign) # Read and Write Data from Other Statistical Systems
 library(Hmisc) # Harrell Miscellaneous. Used to extract .dta file label easily
@@ -17,9 +17,9 @@ library(lfe) # Linear Group Fixed Effects
 library(sandwich) # For robust standard errors
 library(lmtest) # For coefficient testing with robust standard errors
 library(plm) # Panel Data Models - to perform OLS with FE
-library(tidyr)
-library(tidycat)
-library(fixest)
+library(tidyr) # Easily Tidy Data with 'spread()' and 'gather()' Functions
+library(tidycat) # Tidy Categorical Data with 'tidycat'
+library(fixest) # Fast and User-Friendly Fixed-Effects Estimations
 
 # linter:disable
 lint(
@@ -69,10 +69,7 @@ bananas2$ethnic <- as.factor(bananas2$ethnic)
 bananas2$grid <- as.factor(bananas2$grid)
 bananas2$cohort <- as.factor(bananas2$cohort)
 bananas2$mfeid <- as.factor(bananas2$mfeid)
-bananas2 <- bananas2 %>%
-    mutate(mfeid_grid = interaction(mfeid, grid)) %>%
-    drop_na(mfeid_grid) # Create a new variable that is the interaction between the maternal fixed effect and the grid to be used on table 5
-no_bootstraps = 20
+no_bootstraps = 100
 
 ## 3. Set up functions
 
@@ -341,14 +338,14 @@ table3_reg2 = get_results(
     cluster_var = "grid",
     model_type = "ols",
     n_bootstraps = no_bootstraps,
-    regression_number = 3
+    regression_number = 2
 )
 write.csv(x = table3_reg2, file = 'regressions_results/table3_reg2.csv')
 
 table3_reg3 = get_results(
     data = bananas1,
     dependent_var = "weight",
-    independent_var = c("bx*pxt1", 'ethnic)'),
+    independent_var = c("bx*pxt1", 'ethnic'),
     fixed_effects = c("grid", "cohort"),
     remove_var = NA,
     cluster_var = "grid",
@@ -475,10 +472,10 @@ table5_reg1 = get_results(
     independent_var = c('bx',birth_interval),
     fixed_effects = c('cohort',"mfeid*grid"),
     remove_var = NA,
-    cluster_var = "mfeid",
+    cluster_var = "grid",
     model_type = "ols",
     n_bootstraps = no_bootstraps,
-    regression_number = 1)
+    regression_number = 1000)
 write.csv(x = table5_reg1, file = 'regressions_results/table5_reg1.csv')
 
 table5_reg2 = get_results(
@@ -487,9 +484,9 @@ table5_reg2 = get_results(
     independent_var = c('bx*pxp',birth_interval),
     fixed_effects = c('cohort',"mfeid*grid"),
     remove_var = NA,
-    cluster_var = "mfeid_grid",
+    cluster_var = "grid",
     model_type = "ols",
-    n_bootstraps = no_bootstraps,
+    n_bootstraps = 1000,
     regression_number = 2)
 write.csv(x = table5_reg2, file = 'regressions_results/table5_reg2.csv')
 
@@ -499,9 +496,9 @@ table5_reg3 = get_results(
     independent_var = c('bx*pxt1','bx*pxt2','bx*pxt3',birth_interval),
     fixed_effects = c('cohort',"mfeid*grid"),
     remove_var = NA,
-    cluster_var = "mfeid_grid",
+    cluster_var = "grid",
     model_type = "ols",
-    n_bootstraps = no_bootstraps,
+    n_bootstraps = 1000,
     regression_number = 3)
 write.csv(x = table5_reg3, file = 'regressions_results/table5_reg3.csv')
 
@@ -511,7 +508,7 @@ table5_reg4 = get_results(
     independent_var = c('bx*pxt1','bx*pxt2','bx*pxt3',birth_interval),
     fixed_effects = c('cohort',"mfeid*grid"),
     remove_var = NA,
-    cluster_var = "mfeid_grid",
+    cluster_var = "grid",
     model_type = "ols",
     n_bootstraps = no_bootstraps,
     regression_number = 4)
@@ -523,9 +520,9 @@ table5_reg5 = get_results(
     independent_var = c('bx',birth_interval),
     fixed_effects = c('cohort',"mfeid*grid"),
     remove_var = NA,
-    cluster_var = "mfeid_grid",
+    cluster_var = "grid",
     model_type = "ols",
-    n_bootstraps = no_bootstraps,
+    n_bootstraps = 1000,
     regression_number = 5)
 write.csv(x = table5_reg5, file = 'regressions_results/table5_reg5.csv')
 
@@ -535,9 +532,9 @@ table5_reg6 = get_results(
     independent_var = c('bx*pxp',birth_interval),
     fixed_effects = c('cohort',"mfeid*grid"),
     remove_var = NA,
-    cluster_var = "mfeid_grid",
+    cluster_var = "grid",
     model_type = "ols",
-    n_bootstraps = no_bootstraps,
+    n_bootstraps = 1000,
     regression_number = 6)
 write.csv(x = table5_reg6, file = 'regressions_results/table5_reg6.csv')
 
@@ -547,9 +544,9 @@ table5_reg7 = get_results(
     independent_var = c('bx*pxt1','bx*pxt2','bx*pxt3',birth_interval),
     fixed_effects = c('cohort',"mfeid*grid"),
     remove_var = NA,
-    cluster_var = "mfeid_grid",
+    cluster_var = "grid",
     model_type = "ols",
-    n_bootstraps = no_bootstraps,
+    n_bootstraps = 1000,
     regression_number = 7)
 write.csv(x = table5_reg7, file = 'regressions_results/table5_reg7.csv')
 
@@ -559,9 +556,9 @@ table5_reg8 = get_results(
     independent_var = c('bx*pxt1','bx*pxt2','bx*pxt3',birth_interval),
     fixed_effects = c('cohort',"mfeid*grid"),
     remove_var = NA,
-    cluster_var = "mfeid_grid",
+    cluster_var = "grid",
     model_type = "ols",
-    n_bootstraps = no_bootstraps,
+    n_bootstraps = 1000,
     regression_number = 8)
 write.csv(x = table5_reg8, file = 'regressions_results/table5_reg8.csv')
 
