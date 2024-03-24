@@ -12,3 +12,6 @@ All the estimations results are saved in multiple .csv files.
 
 - `OriginalData`: 3 original Stata datasets from Paper Replication Package: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/Z1DGDB
 
+- `Report`: Rmarkdown script and Report in hmtl for our Replication Report.
+
+- `Presentation`: Tex script for slides for replication presentation
