@@ -55,6 +55,7 @@ GetBananasVariableDescription <- function(dataset) {
 
 bananas1_variables_description <- GetBananasVariableDescription(bananas1)
 bananas1_variables_description %>% print(n = 100)
+bananas1$pxt1
 bananas2_variables_description <- GetBananasVariableDescription(bananas2)
 #bananas3_variables_description <- GetBananasVariableDescription(bananas3)
 
@@ -212,11 +213,20 @@ example5_2 <- run_bootstrap(
     model_type = "ols",
     n_bootstraps = 2 # Just to test, in the paper the authors used 1000 - Notice this is VERY computationally expensive
 )
-example5_2
-bananas2_variables_description %>% print(n = 100)
 
-bananas2 %>% subset(select = c(mfeid, grid)) %>% head() 
+example5_3 = run_bootstrap(
+    data = bananas1,
+    dependent_var = "weight",
+    independent_var = c("bx*pxt1", 'ethnic'),
+    fixed_effects = c("grid", "cohort"),
+    remove_var = NA,
+    cluster_var = "grid",
+    model_type = "ols",
+    n_bootstraps = 10)
 
+    view(example5_3)
+
+    mean(example5_3$bx_pxt1) # Notice that the standard deviation of the estimates is very high, this is because the sample is very small
 
 # Notice that the mfeid_grid variable is the interaction between the maternal fixed effect and the grid
 ### 3.6. Given the dataframe with the estimates of the coefficients for each bootstrap, this returns a dataframe with the mean and standard deviation of the coefficients
@@ -235,6 +245,7 @@ get_results <- function(data, dependent_var, independent_var, fixed_effects, rem
     coefs_estimates <- tidy(coefs_estimates)
     coefs_estimates <- coefs_estimates %>% subset(select = c(1, 2))
     coefs_estimates <- coefs_estimates %>% setnames(c("coef", "estimate"))
+    coefs_estimates$coef <- gsub("bx:px", "bx_px", coefs_estimates$coef)
 
     if(model_type == "logit") {
         coefs_estimates$estimate <- exp(coefs_estimates$estimate)
@@ -250,6 +261,7 @@ get_results <- function(data, dependent_var, independent_var, fixed_effects, rem
         clean_names() # Final df is a 1 x n_coeficients df
     boot_mean[] <- boot_mean[] %>% lapply(function(x) as.numeric(as.character(x))) # Convert all to numeric
     boot_mean <- boot_mean %>% pivot_longer(cols = everything(), names_to = "coef", values_to = "mean") # Make it a n_coeficients x 2 dataframe (col1 = coef_name, col2 = mean of bootstraps)
+    boot_mean$coef <- gsub("bx:px", "bx_px", boot_mean$coef)
 
     boot_se <- sapply(boot_estimates, sd, na.rm = TRUE) # Do the same for the std. deviation of bootstrap estiamates = robust std. error
     boot_se <- as.data.frame(t(boot_se))
@@ -350,7 +362,7 @@ table3_reg3 = get_results(
     remove_var = NA,
     cluster_var = "grid",
     model_type = "ols",
-    n_bootstraps = no_bootstraps,
+    n_bootstraps = np_bootstraps,
     regression_number = 3)
 write.csv(x = table3_reg3, file = 'regressions_results/table3_reg3.csv')
 
@@ -465,6 +477,7 @@ write.csv(x = table4_reg6, file = 'regressions_results/table4_reg6.csv')
 
 ## 6. Table 5
 birth_interval = c("birth_interval1","birth_interval2","birth_interval3")
+no_bootstraps = 500
 
 table5_reg1 = get_results(
     data = bananas2,
@@ -475,7 +488,7 @@ table5_reg1 = get_results(
     cluster_var = "grid",
     model_type = "ols",
     n_bootstraps = no_bootstraps,
-    regression_number = 1000)
+    regression_number = 1)
 write.csv(x = table5_reg1, file = 'regressions_results/table5_reg1.csv')
 
 table5_reg2 = get_results(
@@ -486,7 +499,7 @@ table5_reg2 = get_results(
     remove_var = NA,
     cluster_var = "grid",
     model_type = "ols",
-    n_bootstraps = 1000,
+    n_bootstraps = np_bootstraps,
     regression_number = 2)
 write.csv(x = table5_reg2, file = 'regressions_results/table5_reg2.csv')
 
@@ -498,7 +511,7 @@ table5_reg3 = get_results(
     remove_var = NA,
     cluster_var = "grid",
     model_type = "ols",
-    n_bootstraps = 1000,
+    n_bootstraps = np_bootstraps,
     regression_number = 3)
 write.csv(x = table5_reg3, file = 'regressions_results/table5_reg3.csv')
 
@@ -522,7 +535,7 @@ table5_reg5 = get_results(
     remove_var = NA,
     cluster_var = "grid",
     model_type = "ols",
-    n_bootstraps = 1000,
+    n_bootstraps = np_bootstraps,
     regression_number = 5)
 write.csv(x = table5_reg5, file = 'regressions_results/table5_reg5.csv')
 
@@ -534,7 +547,7 @@ table5_reg6 = get_results(
     remove_var = NA,
     cluster_var = "grid",
     model_type = "ols",
-    n_bootstraps = 1000,
+    n_bootstraps = np_bootstraps,
     regression_number = 6)
 write.csv(x = table5_reg6, file = 'regressions_results/table5_reg6.csv')
 
@@ -546,7 +559,7 @@ table5_reg7 = get_results(
     remove_var = NA,
     cluster_var = "grid",
     model_type = "ols",
-    n_bootstraps = 1000,
+    n_bootstraps = np_bootstraps,
     regression_number = 7)
 write.csv(x = table5_reg7, file = 'regressions_results/table5_reg7.csv')
 
@@ -558,11 +571,12 @@ table5_reg8 = get_results(
     remove_var = NA,
     cluster_var = "grid",
     model_type = "ols",
-    n_bootstraps = 1000,
+    n_bootstraps = np_bootstraps,
     regression_number = 8)
 write.csv(x = table5_reg8, file = 'regressions_results/table5_reg8.csv')
 
 ## 7. Table 6
+no_bootstraps = 100
 table6_reg1 = get_results(
     data = bananas1,
     dependent_var = "labors",
