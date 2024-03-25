@@ -1,3 +1,9 @@
+# UPDATE: A pasta CleanResults foi renomada já para o nome da pasta pedido pela Sophie. E estou reestruturando ela para rodar o report certinho. 
+Também inclui um README file nessa pasta que será útil para a Sophie.
+É essa a pasta que iremos *copiar* e dar *commmit* para o repositório env-urban até amanha a noite.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 ## Pastas dentro de CleanResults
 `Scripts`: cinco arquivos .R usados para fazer o replication. </br>
 'VersaoFinal_Replication.R' que define e executa as funções para criar os arquivos base das tabelas 3-6. Note que ele demora para rodar e salva os resulados em diversos arquivos .csv.</br>
@@ -11,3 +17,4 @@
 
 
 Baixando essa pasta apenas, basta alterar o setwd() um pouco e rodar os códigos.
+
