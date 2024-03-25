@@ -20,6 +20,7 @@ library(plm) # Panel Data Models - to perform OLS with FE
 library(tidyr) # Easily Tidy Data with 'spread()' and 'gather()' Functions
 library(tidycat) # Tidy Categorical Data with 'tidycat'
 library(fixest) # Fast and User-Friendly Fixed-Effects Estimations
+library(here)
 
 # linter:disable
 lint(
@@ -30,7 +31,7 @@ lint(
 options(max.print = 100)
 
 ## 2. Load and Clean Data
-setwd("C:/Users/vinic/OneDrive/Mestrado/5Tri/EnvironmentalUrban/ReplicationPackage/CleanResults")
+
 
 bananas1.R <- read_dta("OriginalData/bananas1.dta") # Main dataset used on the papaer
 bananas2.R <- read_dta("OriginalData/bananas2.dta") # Dataset used to generate the tables with maternal fixed effects
