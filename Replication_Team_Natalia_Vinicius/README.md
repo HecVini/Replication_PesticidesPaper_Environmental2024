@@ -14,4 +14,4 @@ All the estimations results are saved in multiple .csv files.
 
 - `Report`: Rmarkdown script and Report in hmtl for our Replication Report.
 
-- `Presentation`: Tex script for slides for replication presentation
+- `Presentation`:  slides for replication presentation
