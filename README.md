@@ -1,6 +1,6 @@
-# UPDATE: A pasta CleanResults foi renomada já para o nome da pasta pedido pela Sophie. E estou reestrututando ela para rodar o report certinho. 
-Também inclui um README file nessa pasta que será útil para a Sophie
-É essa a pasta que iremos *copiar* e dar *commmit* para o repositório env-urban.
+# UPDATE: A pasta CleanResults foi renomada já para o nome da pasta pedido pela Sophie. E estou reestruturando ela para rodar o report certinho. 
+Também inclui um README file nessa pasta que será útil para a Sophie.
+É essa a pasta que iremos *copiar* e dar *commmit* para o repositório env-urban até amanha a noite.
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
 
