@@ -68,11 +68,11 @@ table3 = table3_results %>% subset(
       estimate_6, se_6, ci_6, significant_6
     )
 )
-
+table3
 table3[, c(2, 6, 10, 14, 18, 22)] = lapply(table3[, c(2, 6, 10, 14, 18, 22)], function(x) as.character(round(x, 3)))
 table3[, c(3, 7, 11, 15, 19, 23)] = lapply(table3[, c(3, 7, 11, 15, 19, 23)], function(x) as.character(round(x, 2)))
 
-table3 = table3[c(1,2,3,4,6,8,5,7),]
+table3 = table3[c(1,2,3,4,6,8,5,7,9),]
 
 for (i in 1:nrow(table3)) {
   for (j in c(5, 9, 13, 17, 21, 25)) {
@@ -134,7 +134,7 @@ table3_gt = table3_gt %>%
     estimate_4 = md("**Model 4**"),
     estimate_5 = md("**Model 5**"),
     estimate_6 = md("**Model 6**"))
-
+table3_gt
 
 # Make significant coefficients bold (couldnt find an authomatic way to do it)
 table3_gt = table3_gt %>% 
@@ -222,7 +222,7 @@ table3_gt = table3_gt %>%
     locations = list(
       cells_body(
         columns = everything(),
-        rows = c(1,3,5,7,9,11,13,15)
+        rows = c(1,3,5,7,9,11,13,15,17)
       )
       )
     )

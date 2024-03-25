@@ -81,9 +81,7 @@ table5 = table5_results %>% subset(
 
 table5[, c(2, 6, 10, 14, 18, 22, 26, 30)] = lapply(table5[, c(2, 6, 10, 14, 18, 22, 26, 30)], function(x) as.character(round(x, 3)))
 table5[, c(3, 7, 11, 15, 19, 23, 27, 31)] = lapply(table5[, c(3, 7, 11, 15, 19, 23, 27, 31)], function(x) as.character(round(x, 2)))
-
-table5 = table5[c(1,2,3,4,6,8,5,7),]
-view(table5)
+table5
 
 for (i in 1:nrow(table5)) {
   for (j in c(5, 9, 13, 17, 21, 25, 29, 33)) {
@@ -227,7 +225,7 @@ table5_gt = table5_gt %>%
     locations = list(
       cells_body(
         columns = everything(),
-        rows = c(1,3,5,7,9,11,13,15)
+        rows = c(1,3,5,7,9,11,13,15,17)
       )
       )
     )

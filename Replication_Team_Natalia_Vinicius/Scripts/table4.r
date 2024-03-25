@@ -72,8 +72,6 @@ table4 = table4_results %>% subset(
 table4[, c(2, 6, 10, 14, 18, 22)] = lapply(table4[, c(2, 6, 10, 14, 18, 22)], function(x) as.character(round(x, 3)))
 table4[, c(3, 7, 11, 15, 19, 23)] = lapply(table4[, c(3, 7, 11, 15, 19, 23)], function(x) as.character(round(x, 2)))
 
-table4 = table4[c(1,2,3,4,6,8,5,7),]
-
 for (i in 1:nrow(table4)) {
   for (j in c(5, 9, 13, 17, 21, 25)) {
     if (!is.na(table4[i, j]) && table4[i, j] == "yes") {
@@ -104,7 +102,7 @@ for (i in seq(1, nrow(table4), by = 2)) {
 }
 
 table4 = table4 %>% subset(select = -c(3, 4, 5, 7, 8, 9, 11, 12, 13, 15, 16, 17, 19, 20, 21, 23, 24, 25))
-
+table4
 ## 3. Make the table
 table4_gt = gt(table4)
 
@@ -157,7 +155,7 @@ table4_gt
 table4_gt = table4_gt %>% 
   tab_style(
     style = list(cell_text(weight = "bold")),
-    locations = cells_body(rows = 15, columns = 3)
+    locations = cells_body(rows = 13, columns = 3)
   ) %>% 
   tab_style(
     style = list(cell_text(weight = "bold")),
@@ -169,7 +167,7 @@ table4_gt = table4_gt %>%
   ) %>% 
   tab_style(
     style = list(cell_text(weight = "bold")),
-    locations = cells_body(rows = c(7,11,13), columns = 7)
+    locations = cells_body(rows = c(7,9,15), columns = 7)
   )
 
 # Align columns properly
@@ -235,7 +233,7 @@ table4_gt = table4_gt %>%
     locations = list(
       cells_body(
         columns = everything(),
-        rows = c(1,3,5,7,9,11,13,15)
+        rows = c(1,3,5,7,9,11,13,15,17)
       )
       )
     )
