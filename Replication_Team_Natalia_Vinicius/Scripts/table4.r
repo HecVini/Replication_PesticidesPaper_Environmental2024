@@ -23,9 +23,8 @@ library(tidycat)
 library(fixest)
 library(tidyselect)
 library(webshot) # To save the table as an image
-webshot::install_phantomjs()
-
-setwd("C:/Users/vinic/OneDrive/Mestrado/5Tri/EnvironmentalUrban/ReplicationPackage/CleanResults")
+#webshot::install_phantomjs()
+library(here)
 tom_azul = "#434371"
 
 table4_reg1 = read.csv("ReplicatedResults/table4_reg1.csv") %>%

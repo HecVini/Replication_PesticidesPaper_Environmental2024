@@ -24,8 +24,8 @@ library(fixest)
 library(tidyselect)
 library(webshot) # To save the table as an image
 webshot::install_phantomjs()
+library(here)
 
-setwd("C:/Users/vinic/OneDrive/Mestrado/5Tri/EnvironmentalUrban/ReplicationPackage/CleanResults")
 tom_azul = "#21549d"
 
 table6_reg1 = read.csv("ReplicatedResults/table6_reg1.csv") %>%
@@ -140,7 +140,7 @@ table6_gt = table6_gt %>%
     columns = c(6,7,8)
   )
   table6_gt
-bananas1$educ
+#bananas1$educ
 #Rename columns 
 table6_gt <- table6_gt %>%
   cols_label(

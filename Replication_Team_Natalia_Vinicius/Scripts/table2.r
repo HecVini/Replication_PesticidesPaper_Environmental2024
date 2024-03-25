@@ -16,8 +16,8 @@ library(boot) # Bootstrap Functions for R
 library(lfe) # Linear Group Fixed Effects
 library(sandwich) # For robust standard errors
 library(lmtest) # For coefficient testing with robust standard errors
+library(here)
 
-setwd("C:/Users/vinic/OneDrive/Mestrado/5Tri/EnvironmentalUrban/ReplicationPackage/CleanResults")
 
 # linter:disable
 lint(
