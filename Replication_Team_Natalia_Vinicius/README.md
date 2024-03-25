@@ -7,5 +7,5 @@
 * `ReplicatedResults`: subfolder containing multiple .csv files with the replicated results from Tables 2-6
 * `FinalTables`: Final version of the tables to be used on the beamer slides of the presentation. All files saved in html 
 * `OriginalData`: 3 original Stata datasets from Paper Replication Package: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/Z1DGDB
-* `Report`: Rmarkdown script and Report in hmtl for our Replication Report.
+* `Report`: Rmarkdown script and Report in html for our Replication Report.
 * `Presentation`:  slides for replication presentation
